@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Catimba - Desenvolvedora
+  </title>
+
+  <style>
+    /* Definindo as cores principais */
+:root {
+      --blue-dark: #003366;
+      /* Azul escuro */
+      --blue-light: #66ccff;
+      /* Azul claro */
+      --highlight: #00b3b3;
+      /* Azul vibrante */
+      --white: #ffffff;
+      /* Branco */
+      --gray-light: #f2f2f2;
+      /* Cinza claro */
+      --dark-gray: #333333;
+      /* Cinza escuro */
+      --accent: #4da6ff;
+      /* Azul suave para destaque */
+      --soft-blue: #0099cc;
+      /* Azul suave */
+    }
+
+    /* Resetando margens e padding padrão */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Corpo da página */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--gray-light);
+      color: var(--dark-gray);
+      line-height: 1.6;
+      overflow-x: hidden;
+      font-size: 16px;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: var(--blue-dark);
+      color: var(--white);
+      text-align: center;
+      padding: 5rem 2rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-bottom: 4px solid var(--highlight);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      font-weight: 400;
+    }
+
+    /* Links no Cabeçalho */
+    header a {
+      color: var(--highlight);
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 1rem;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    /* Títulos das seções */
+    h2 {
+      color: var(--blue-dark);
+      font-size: 2.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    /* Seções */
+    section {
+      padding: 3rem 2rem;
+      margin: 3rem 0;
+      background-color: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      opacity: 0;
+      /* Inicialmente invisível para animação */
+      transform: translateY(20px);
+      /* Efeito de movimento suave */
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section:hover {
+      transform: translateY(-8px);
+    }
+
+    section p, section ul {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: center;
+      color: var(--dark-gray);
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 1rem;
+/-*-//
+    ul li {
+      margin: 1rem 0;
+    }
+
+    /* Links */
+    a {
+      color: var(--highlight);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: var(--soft-blue);
+    }
+
+    /* Botões */
+    .btn {
+      background-color: var(--highlight);
+      color: var(--white);
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--soft-blue);
+    }
+
+    /* Rodapé */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--blue-dark);
+      color: var(--white);
+      font-size: 1rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      color: var(--highlight);
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      section h2 {
+        font-size: 2rem;
+      }
+
+      section p, section ul {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Ana Catimba</h1>
+    <p>
+     Criadora de Soluções Digitais
+
+    </p>
+    <p>
+      <strong> Programando ideias,moldando o mundo </strong>
+
+    </p>
+  </header>
+
+  <!-- Sobre Mim -->
+  <section id="about" class="visible">
+    <h2>Sobre Mim</h2>
+    <p>
+      Sou apaixonada por tecnologia e busco transformar ideias em soluções inovadoras. Com experiência em Python, C#, HTML, CSS, JavaScript e muito mais, desenvolvo sites e ferramentas para ajudar empresas a crescerem.
+    </p>
+    <a href="#contact" class="btn">Entre em Contato</a>
+  </section>
+
+  <!-- Serviços -->
+  <section id="services" class="visible">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Desenvolvimento de Sites Responsivos</li>
+      <li>Consultoria em Programação e Projetos Web</li>
+      <li>Automatização de Processos e Ferramentas Personalizadas</li>
+    </ul>
+    <a href="#contact" class="btn">Solicitar Orçamento</a>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="visible">
+    <h2>Contato</h2>
+    <p>
+      Gostou do que viu? Entre em contato comigo para discutirmos o seu projeto!
+    </p>
+    <ul>
+      <li>Email: <a href="mailto:anamaravilha658@gmail.com">anamaravilha658@gmail.com</a></li>
+      <li>Telefone: 925943611</li>
+      <li>Instagram: <a href="https://www.instagram.com/anamaravilha658" target="_blank">@anamaravilha658</a></li>
+    </ul>
+    <p>
+      <a href="index.html" target="_blank" class="btn">Visite a Marine Colossus</a>
+    </p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>
+      &copy; 2025 Ana Katimba. Todos os direitos reservados.
+    </p>
+    <p>
+      Me siga nas redes sociais para mais atualizações.
+    </p>
+    <p>
+      <a href="https://www.instagram.com/anamaravilha658" target="_blank">Instagram</a> | <a href="mailto:anamaravilha658@gmail.com">Email</a> | <a href="https://www.marinecolossus.com" target="_blank">Marine Colossus</a>
+    </p>
+  </footer>
+
+  <script>
+    // Função para adicionar a classe "visible" quando a seção estiver visível na tela
+    function handleScroll() {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (sectionTop < windowHeight * 0.8) {
+          section.classList.add('visible');
+        }
+      });
+    }
+
+    // Adiciona o evento de rolagem
+    window.addEventListener('scroll', handleScroll);
+
+    // Executa a função no uma vez ao carregar a página
+    handleScroll();
+  </script>
+
+</body>
+</html>

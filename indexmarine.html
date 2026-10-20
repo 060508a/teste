@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marine Colossus | Tecnologia & Inovação</title>
+  <style>
+    /* ESTILOS GERAIS */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: linear-gradientwhite;
+      color: blue;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient blue;
+      color: blue;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #002244;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #4da6ff;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    p
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 20px 0;
+      box-shadow: 0 5px 15px rgba(0, 34, 68, 0.1);
+    }
+    card-servico {
+      border-left: 4px solid #0066cc;
+    }
+    .btn {
+      background: #0066cc;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+    btn:hover {
+      background: #004d99;
+    }
+    footer {
+      background: #002244;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+    .equipe img {
+      width: 100%;
+      border-radius: 50%;
+      max-width: 150px;
+      margin: 10px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- CABEÇALHO (DESTAQUE) -->
+  <header>
+    <h1 style="margin: 0; font-size: 2.5em;">MARINE COLOSSUS</h1>
+    <p style="font-size: 1.2em; opacity: 0.9;">
+      Tecnologia • Publicidade • Soluções Personalizadas
+    </p>
+    <a href="#contato" class="btn">Fale Conosco</a>
+  </header>
+
+  <!-- MENU -->
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#equipe">Equipe</a>
+    <a href="#contato">Contato</a>
+    <a href="loja.html" style="color: #4da6ff;">Loja Virtual</a>
+    <a href="pagina_pessoal.html" style="color: #4da6ff;"> Sobre a fundadora </a>
+
+  </nav>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="container">
+    <div class="card">
+      <h2>Quem Somos</h2>
+      <p>
+        A <strong>Marine Colossus</strong> é uma empresa especializada em <strong>assessoria tecnológica</strong>, <strong>publicidade digital</strong> e <strong>acompanhamento tecno-motivacional</strong>. Combinamos inovação com estratégia para impulsionar seu negócio.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="container">
+    <h2 style="text-align: center;">Nossos Serviços</h2>
+
+    <div class="card card-servico">
+      <h3>🔧 Assessoria Tecnológica</h3>
+      <p>
+        Implementação de ferramentas digitais, migração para nuvem e otimização de processos.
+      </p>
+      <a href="#contato" class="btn">Solicitar Orçamento</a>
+    </div>
+
+    <div class="card card-servico">
+      <h3>🎨 Publicidade & Imagem</h3>
+      <p>
+        Criação de campanhas digitais, gestão de redes sociais e branding corporativo.
+      </p>
+      <a href="#contato" class="btn">Solicitar Orçamento</a>
+    </div>
+
+    <div class="card card-servico">
+      <h3>💡 Acompanhamento Tecno-Motivacional</h3>
+      <p>
+        Workshops e treinamentos para equipas, com foco em tecnologia e produtividade.
+      </p>
+      <a href="#contato" class="btn">Solicitar Orçamento</a>
+    </div>
+  </section>
+
+  <!-- EQUIPE (OPCIONAL) -->
+  <section id="equipe" class="container">
+    <h2 style="text-align: center;">Conheça Nossa Equipe</h2>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+      <div style="text-align: center;">
+        <img src="https://via.placeholder.com/150?text=CEO" alt="CEO">
+        <h3>Ana Catimba</h3>
+        <p>
+          CEO & Fundadora
+
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="contato" class="container">
+    <div class="card">
+      <h2 style="text-align: center;">Pronto para Transformar Seu Negócio?</h2>
+      <form action="https://formsubmit.co/marinecolossus25@gmail.com" method="POST" style="max-width: 500px; margin: 0 auto;">
+        <!-- Campos Ocultos Essenciais -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://Ana-Maravilha.github.io/obrigado.html">
+        <input type="hidden" name="_subject" value="Novo Contato - Marine Colossus">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem! Retornaremos em até 24h.">
+
+        <!-- Campos Visíveis -->
+        <input type="text" name="Nome" placeholder="Seu Nome Completo"
+        style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;" required>
+
+        <input type="email" name="Email" placeholder="Seu Melhor Email"
+        style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;" required>
+
+        <input type="tel" name="Telefone" placeholder="Telefone (Opcional)"
+        style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+
+        <select name="Serviço de Interesse" style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+          <option value="" disabled selected>Selecione um serviço</option>
+          <option value="Assessoria Tecnológica">Assessoria Tecnológica</option>
+          <option value="Publicidade">Publicidade & Imagem</option>
+          <option value="Treinamentos">Acompanhamento Tecno-Motivacional</option>
+          <option value="Outro">Outro</option>
+        </select>
+
+        <textarea name="Mensagem" placeholder="Como podemos ajudar?" rows="5"
+          style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;" required></textarea>
+
+        <button type="submit" class="btn"
+          style="border: none; cursor: pointer; width: 100%; padding: 14px; font-weight: bold;">
+          Enviar Mensagem
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    // 1. MENU FIXO COM EFEITO DE SCROLL
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');
+      if (window.scrollY >
+        100) {
+        nav.style.boxShadow = '0 4px 12px rgba(0, 34, 68, 0.15)';
+      } else {
+        nav.style.boxShadow = 'none';
+      }
+    }
+
+    );
+
+
+
+    // Validação básica
+    const nome = form.querySelector('input[type="text"]').value;
+    const email = form.querySelector('input[type="email"]').value;
+
+    if (nome.trim() === '' || email.trim() === '') {
+      alert('Por favor, preencha todos os campos!');
+      return;
+    }
+
+
+
+    ! Sua mensagem foi enviada com sucesso.`);
+    form.reset();
+
+    // Para usar FormSubmit real, adicione:
+    form.action = "https://formsubmit.co/anamaravilha658@gmail.com"method = "POST"
+    // form.submit();
+    }
+
+    );
+    }
+
+    // 3. ANIMAÇÃO DE CARDS AO ROLAR A PÁGINA
+    const cards = document.querySelectorAll('.card');
+    function showCardsOnScroll() {
+    cards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+    if (cardTop < window.innerHeight - 100) {
+    card.style.opacity = '1';
+    card.style.transform = 'translateY(0)';
+    }
+    }
+
+    );
+    }
+
+    // Pré-configura animação
+    cards.forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = 'all 0.6s ease-out';
+    }
+
+    );
+
+    window.addEventListener('scroll',
+    showCardsOnScroll);
+    showCardsOnScroll(); // Executa ao carregar
+
+    // 4. BOTÃO "VOLTAR AO TOPO"
+    const backToTopBtn = document.createElement('button');
+    backToTopBtn.innerHTML = '↑';
+    backToTopBtn.style.position = 'fixed';
+    backToTopBtn.style.bottom = '20px';
+    backToTopBtn.style.right = '20px';
+    backToTopBtn.style.padding = '10px 15px';
+    backToTopBtn.style.background = '#0066cc';
+    backToTopBtn.style.color = 'white';
+    backToTopBtn.style.border = 'none';
+    backToTopBtn.style.borderRadius = '50%';
+    backToTopBtn.style.cursor = 'pointer';
+    backToTopBtn.style.display = 'none';
+    backToTopBtn.style.zIndex = '99';
+
+    backToTopBtn.addEventListener('click',
+    () => {
+    window.scrollTo( {
+    top: 0, behavior: 'smooth'
+    }
+
+    );
+    }
+
+    );
+
+    document.body.appendChild(backToTopBtn);
+
+    window.addEventListener('scroll',
+    () => {
+    backToTopBtn.style.display = window.scrollY > 300 ? 'block': 'none';
+    }
+
+    );
+  </script>
+  <!-- Botão do WhatsApp -->
+  <a href="https://wa.me/351955645732" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 100;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+</body>
+</html>
+</form>
+</div>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+<p>
+© 2025 Marine Colossus. Todos os direitos reservados.
+</p>
+<p>
+📍 Rua da Tecnologia, 123, Luanda | 📞 +244 955645732
+</p>
+<div style="margin-top: 15px;">
+<a href="#" style="color: white; margin: 0 10px;">Instagram</a>
+<a href="#" style="color: white; margin: 0 10px;">Facebook</a>
+</div>
+</footer>
+
+<script>
+// ===== [1. CONTROLE DE FORMULÁRIO AVANÇADO] =====
+document.addEventListener('DOMContentLoaded',
+function() {
+// Configuração do FormSubmit
+const form = document.querySelector('form');
+if (form) {
+form.action = "https://formsubmit.co/marinecolossus25@gmail.com";
+form.method = "POST";
+
+// Adicione campos ocultos para melhor organização
+const hiddenFields = `
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+<input type="hidden" name="_template" value="table">
+`;
+form.insertAdjacentHTML('beforeend', hiddenFields);
+}
+
+// ===== [2. MENU INTELIGENTE] =====
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+nav.style.background = window.scrollY > 50 ? '#002244ee': '#002244';
+nav.style.backdropFilter = window.scrollY > 50 ? 'blur(10px)': 'none';
+}
+
+);
+
+// ===== [3. ANIMAÇÕES PROFISSIONAIS] =====
+const animateOnScroll = (elements, className) => {
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add(className);
+}
+}
+
+);
+}, {
+threshold: 0.1
+}
+
+);
+
+elements.forEach(el => observer.observe(el));
+};
+
+// Aplicar às seções
+document.querySelectorAll('.card').forEach(card => {
+card.style.opacity = '0';
+card.style.transform = 'translateY(20px)';
+card.style.transition = 'all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)';
+}
+
+);
+
+animateOnScroll(document.querySelectorAll('.card'), 'animate');
+
+// ===== [4. BOTÕES FLUTUANTES] =====
+// WhatsApp
+const whatsappBtn = document.createElement('a');
+whatsappBtn.href = "https://wa.me/244955645732";
+whatsappBtn.target = "_blank";
+whatsappBtn.innerHTML = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="white">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+</svg>
+`;
+
+// Estilização dinâmica
+Object.assign(whatsappBtn.style, {
+position: 'fixed',
+bottom: '20px',
+right: '20px',
+background: '#25D366',
+color: 'white',
+width: '60px',
+height: '60px',
+borderRadius: '50%',
+display: 'flex',
+alignItems: 'center',
+justifyContent: 'center',
+boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+zIndex: '100',
+transition: 'transform 0.3s'
+}
+
+);
+
+whatsappBtn.addEventListener('mouseenter', () => {
+whatsappBtn.style.transform = 'scale(1.1)';
+}
+
+);
+whatsappBtn.addEventListener('mouseleave', () => {
+whatsappBtn.style.transform = 'scale(1)';
+}
+
+);
+
+document.body.appendChild(whatsappBtn);
+
+// ===== [5. CARREGAMENTO OTIMIZADO DE IMAGENS] =====
+document.querySelectorAll('img').forEach(img => {
+img.loading = "lazy";
+if (!img.alt) img.alt = "Imagem Marine Colossus";
+}
+
+);
+}
+
+);
+</script>
+
+<!-- Adicione este CSS para as animações -->
+<style>
+/* ANIMAÇÕES */
+.card.animate {
+opacity: 1 !important;
+transform: translateY(0) !important;
+}
+/* EFEITO DE CARREGAMENTO */
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+body {
+animation: fadeIn 0.5s ease-out;
+}
+/* RESPONSIVIDADE MELHORADA */
+@media (max-width: 768px) {
+nav a {
+margin: 0 8px;
+font-size: 0.9em;
+}
+.card {
+padding: 15px;
+}
+}
+</style>
+</body>
+</html>

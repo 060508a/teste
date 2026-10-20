@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Marine Colossus - Tecnologia & Inovação</title>
+  <style>
+    /* ESTILOS PRINCIPAIS - MELHORADOS */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background: #e6f2ff;
+      color: #003366;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #003366, #0066cc);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      background: #003366;
+      padding: 15px;
+      text-align: center;
+      position: center;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .produto {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 300px;
+      box-shadow: 0 4px 12px rgba(0, 51, 102, 0.15);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .produto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 51, 102, 0.2);
+    }
+
+    .produto img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .preco {
+      color: #0066cc;
+      font-size: 1.3em;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 20px 0;
+      box-shadow: 0 5px 15px rgba(0, 34, 68, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 34, 68, 0.15);
+    }
+
+    .card-servico {
+      border-left: 5px solid #0066cc;
+    }
+
+    button {
+      background: #0066cc;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #004d99;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Novas classes para layout */
+    .produtos-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .servicos-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .destaque {
+      color: #0066cc;
+      font-weight: bold;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .produto {
+        max-width: 100%;
+      }
+
+      .produtos-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- CABEÇALHO MELHORADO -->
+  <header>
+    <h1>MARINE COLOSSUS</h1>
+    <p class="destaque">
+      Tecnologia • Inovação • Qualidade • Excelência
+    </p>
+  </header>
+
+  <!-- MENU MELHORADO -->
+  <nav>
+    <a href="#produtos">Produtos</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+    <a href="#sobre">Sobre Nós</a>
+  </nav>
+
+  <!-- PRODUTOS MELHORADOS -->
+  <section id="produtos">
+    <h2 style="text-align: center; color: #003366; margin-bottom: 30px;">Nossos Produtos em Destaque</h2>
+
+    <div class="produtos-container">
+      <!-- Produto 1 -->
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200?text=Smartphone+Premium" alt="Smartphone Marine X1">
+        <h3>Smartphone Marine X1</h3>
+        <p>
+          O mais avançado da linha Marine, com processador de última geração, 128GB de armazenamento e tela AMOLED de 6.5".
+        </p>
+        <ul style="text-align: left; padding-left: 20px;">
+          <li>Bateria de 5000mAh</li>
+          <li>Câmera tripla 64MP</li>
+          <li>Resistente à água</li>
+        </ul>
+        <p class="preco">
+          80.000 kzs <span style="font-size: 0.8em; color: #666;"></span>
+        </p>
+        <button onclick="comprar('Smartphone Marine X1')">Comprar Agora</button>
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200?text=Tablet+Pro" alt="Tablet Marine Pro">
+        <h3>Tablet Marine Pro</h3>
+        <p>
+          Ideal para profissionais criativos, com 256GB de armazenamento e caneta stylus inclusa.
+        </p>
+        <ul style="text-align: left; padding-left: 20px;">
+          <li>Tela de 11" 120Hz</li>
+          <li>16 horas de bateria</li>
+          <li>Compatível com teclado</li>
+        </ul>
+        <p class="preco">
+          120.000 kzs <span style="font-size: 0.8em; color: #666;"></span>
+        </p>
+        <button onclick="comprar('Tablet Marine Pro')">Comprar Agora</button>
+      </div>
+
+      <!-- Produto 3 -->
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200?text=Fones+Marine" alt="Fones Marine Audio+">
+        <h3>Fones Marine Audio+</h3>
+        <p>
+          Experiência de áudio premium com cancelamento ativo de ruído e tecnologia Bluetooth 5.0.
+        </p>
+        <ul style="text-align: left; padding-left: 20px;">
+          <li>30h de bateria</li>
+          <li>Toque sensível</li>
+          <li>Resistente ao suor</li>
+        </ul>
+        <p class="preco">
+          10.000 kzs<span style="font-size: 0.8em; color: #666;"></span>
+        </p>
+        <button onclick="comprar('Fones Marine Audio+')">Comprar Agora</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS MELHORADOS -->
+  <section id="servicos" class="servicos-container">
+    <h2 style="text-align: center; color: #003366; margin-bottom: 30px;">Nossos Serviços Especializados</h2>
+
+    <!-- Serviço 1 -->
+    <div class="card card-servico">
+      <h3>Consultoria em Programação</h3>
+      <p>
+        Nossa equipe de especialistas oferece consultoria personalizada para desenvolvimento de software, arquitetura de sistemas e otimização de código.
+      </p>
+      <ul>
+        <li>Análise de requisitos</li>
+        <li>Planejamento de projetos</li>
+        <li>Orientação tecnológica</li>
+      </ul>
+      <p class="preco">
+        A partir de 50.000 kzs/mês
+      </p>
+      <button onclick="contratar('Consultoria em Programação')">Contratar Serviço</button>
+    </div>
+
+    <!-- Serviço 2 -->
+    <div class="card card-servico">
+      <h3>Personalização de Sites</h3>
+      <p>
+        Transforme seu site em uma poderosa ferramenta de negócios com nosso serviço de personalização e otimização.
+      </p>
+      <ul>
+        <li>Design responsivo</li>
+        <li>Otimização SEO</li>
+        <li>Integração com redes sociais</li>
+      </ul>
+      <p class="preco">
+        A partir de
+        70.000 kzs/projeto
+      </p>
+      <button onclick="contratar('Personalização de Sites')">Contratar Serviço</button>
+    </div>
+
+    <!-- Serviço 3 -->
+    <div class="card card-servico">
+      <h3>Aulas Online Personalizadas</h3>
+      <p>
+        Aprenda tecnologia com nossos instrutores especializados em aulas 100% online e adaptadas às suas necessidades.
+      </p>
+      <ul>
+        <li>Programação web e mobile</li>
+        <li>Design gráfico</li>
+        <li>Marketing digital</li>
+      </ul>
+      <p class="preco">
+        A partir de 45.000 kzs/mês
+      </p>
+      <button onclick="contratar('Aulas Online Personalizadas')">Contratar Serviço</button>
+    </div>
+  </section>
+
+  <!-- CONTATO MELHORADO -->
+  <section id="contato" style="padding: 20px; max-width: 800px; margin: 0 auto;">
+    <h2 style="text-align: center; color: #003366; margin-bottom: 30px;">Entre em Contato Conosco</h2>
+    <div class="card" style="padding: 30px;">
+      <div style="display: flex; align-items: center; margin-bottom: 15px;">
+        <span style="font-size: 1.5em; margin-right: 15px;">📞</span>
+        <div>
+          <strong>Telefone:</strong><br>
+          +244 955 645 732<br>
+          <small>(Seg-Sex, 9h-18h)</small>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; margin-bottom: 15px;">
+        <span style="font-size: 1.5em; margin-right: 15px;">✉️</span>
+        <div>
+          <strong>Email:</strong><br>
+          marinecolossus25@gmail.com<br>
+          <small>Resposta em até 24h</small>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center;">
+        <span style="font-size: 1.5em; margin-right: 15px;">📍</span>
+        <div>
+          <strong>Endereço:</strong><br>
+          Rua da Tecnologia, 123<br>
+          Luanda, Angola
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SOBRE MELHORADO -->
+  <section id="sobre" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+    <div class="card">
+      <h2 style="color: #003366; margin-bottom: 20px;">Quem Somos</h2>
+      <p>
+        A <span class="destaque">Marine Colossus</span> é uma empresa líder em soluções tecnológicas, combinando inovação com estratégia para impulsionar seu negócio no mundo digital.
+      </p>
+      <p>
+        Fundada em 2025, nossa missão é democratizar o acesso à tecnologia de ponta, oferecendo produtos de qualidade e serviços especializados a preços competitivos.
+      </p>
+      <h3 style="color: #003366; margin-top: 20px;">Nossos Valores</h3>
+      <ul>
+        <li><strong>Inovação:</strong> Estamos sempre à frente nas últimas tendências tecnológicas</li>
+        <li><strong>Qualidade:</strong> Padrões rigorosos em todos nossos produtos e serviços</li>
+        <li><strong>Atendimento:</strong> Relacionamento próximo e personalizado com cada cliente</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RODAPÉ MELHORADO -->
+  <footer>
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin-bottom: 10px;">
+        © 2025 Marine Colossus. Todos os direitos reservados.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 20px;">
+        <a href="#" style="color: white; text-decoration: none;">Política de Privacidade</a>
+        <a href="#" style="color: white; text-decoration: none;">Termos de Serviço</a>
+        <a href="#" style="color: white; text-decoration: none;">Trocas e Devoluções</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+
+    function comprar(nomeProduto) {
+      alert("✔️ " + nomeProduto + " adicionado ao carrinho com sucesso!");
+      // Aqui você pode redirecionar para um checkout ou página de pagamento
+      // window.location.href = "https://sualoja.com/checkout?produto=" + encodeURIComponent(nomeProduto);
+    }
+
+    function contratar(nomeServico) {
+      alert("📩 Recebemos seu interesse no serviço: " + nomeServico + "\n\nNossa equipe entrará em contato em breve!");
+    }
+  </script>
+</body>
+</html>
